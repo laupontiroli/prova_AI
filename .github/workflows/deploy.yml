@@ -58,6 +58,6 @@ jobs:
         key: ${{ secrets.KEY_TEST }}
         port: 22
         script: |
-          docker stop provaAi
-          docker rm --force provaAi
-          docker run -d -p 8080:8080 --network=rede --name provaAi laupontiroli/provaAi-ci:${{ github.sha }}
+          docker stop provaprojsoft
+          docker rm --force provaprojsoft
+          docker run -d -p 8080:8080 --network=rede --name provaprojsoft laupontiroli/provaprojsoft-ci:${{ github.sha }}
