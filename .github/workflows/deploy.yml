@@ -48,7 +48,7 @@ jobs:
         context: .
         file: ./Dockerfile
         push: true
-        tags: laupontiroli/provaAi-ci:${{ github.sha }}  #pega o hash do commit
+        tags: laupontiroli/prova_AI-ci:${{ github.sha }}  #pega o hash do commit
 
     - name: executing remote ssh commands using password
       uses: appleboy/ssh-action@master
